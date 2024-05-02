@@ -296,6 +296,7 @@ class Predictor(BasePredictor):
             
             if not first_iteration:
                 creativity = creativity * 0.8
+                seed = seed +1
                 
             first_iteration = False
 
