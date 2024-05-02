@@ -232,7 +232,7 @@ class Predictor(BasePredictor):
         custom_sd_model: str = Input(
             default=""
         ),
-        sharpen: int = Input(
+        sharpen: float = Input(
             description="Sharpen the image after upscaling. The higher the value, the more sharpening is applied. 0 for no sharpening", ge=0, le=10, default=0
         ),
     ) -> list[Path]:
